@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dekorasiultah.com</title>
+<script src="Gambar/jquery.js"></script>
+<script src="Gambar/nivo.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="Gambar/nivo.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){
+	$("#slider").nivoSlider();
+});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$("#ac1").hide();
+		$("#ac2").hide();
+		$("#ac3").hide();
+		$(".a a").click(function(){
+			var n=$(this).attr("href");
+			if(n=="#ac3"){
+				$("#ac2").slideUp();
+				$("#ac1").slideUp();
+				$(n).slideToggle();
+			}
+			if(n=="#ac2"){
+				$("#ac3").slideUp();
+				$("#ac1").slideUp();
+				$(n).slideToggle();
+			}
+			if(n=="#ac1"){
+				$("#ac2").slideUp();
+				$("#ac3").slideUp();
+				$(n).slideToggle();
+			}
+			
+			
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="layout">
+	<div class="header"><img src="Gambar/header6.jpg" width="900" height="150" /></div>
+    <div class="hmenu">
+    <ul>
+    	<b>
+		<li><a href="index.html">Home</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+         <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="kontak.html">Hubungi Kami</a></li>
+        </b>
+	</ul>
+    </div>
+  <div class="sidebar">
+    	<div class="box">
+			<h3>Artikel</h3>
+			
+		</div>
+        
+        
+        <div class="box">
+         <img src="Gambar/artikel1.jpg" width="280" height="200" />
+        <p>Kumpulan Puisi Ulang Tahun...</p>
+        <b>17 okt 2017</b><b>views :1007,398</b>
+        <a href="http://www.lokerpuisi.web.id/2014/01/puisi-ulang-tahun.html"  target="_blank">klik disini</a>
+        </div>
+        <div class="box">
+        <img src="Gambar/artikel2.jpg" width="280" height="200" />
+        <p>Kebiasaan ulang tahun di keluarga shahrukhan...</p>
+        <b>02 nov 2017</b><b>views :1007,398</b>
+        <a href="http://poskotanews.com/2017/11/02/selamat-ulang-tahun-shah-rukh-khan/"  target="_blank">klik disini</a>
+        </div>
+
+       
+  </div>
+  <div class="content">
+	  <h2>What's Next ?</h2>
+		<p>Ulang Tahun adalah momen yang paling bahagia bagi sesorang ,di momen tersebut juga tidak semua orang bisa merasakan hal yang sama yaitu bahagia. tapi kebanyakan orang pasti merayakan ulang tahunnya semeriah mungkin meskipun umurnya sudah tidak muda mereka masih merayakan dan berbagi kebahagian dengan orang-orang disekitarnya. Dengan mendekorasi ruangan rumahnya agar tampak semeriah mungkin mereka memesan jasa dekorasi untuk ulang tahun</p>
+        	<h2>Artikel berdasarkan kategori</h2>
+		<ul>
+			<li><a href="http://www.lokerpuisi.web.id/"  target="_blank">Puisi teromantis</a></li>
+			<li><a href="https://iphincow.com/"  target="_blank">inspirasi</a></li>
+			<li><a href="http://katamotivasi123.blogspot.co.id/"  target="_blank">Motivasi & Semangat</a></li>
+			<li><a href="http://www.metrotvnews.com/index/"  target="_blank">Berita</a></li>
+		</ul>
+		<div class="box">
+        <img src="Gambar/artikel3.jpg" width="280" height="200" />
+        <p>Kue kalajengking adalah termasuk kue terunik...</p>
+        <b>05 nov 2017</b><b>views :109,398</b>
+        <a href="https://sofie05.wordpress.com/2010/06/23/kue-ultah-terunik/"  target="_blank">klik disini</a>
+        </div>
+			
+	
+    </div>
+    
+    
+    <div class="clear"></div>
+    
+    <div class="footer"><p>Copyright © 2017 DekorasiUlangTahun.com By Siti Saadah
+    
+    </div>
+    
+</div>
+</body>
+</html>
+

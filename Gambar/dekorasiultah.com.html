@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://localhost/pw/kontak.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>dekorasiultah.com</title>
+<script src="./dekorasiultah.com_files/jquery.js.download"></script>
+<script src="./dekorasiultah.com_files/nivo.js.download"></script>
+<link href="./dekorasiultah.com_files/style.css" rel="stylesheet" type="text/css">
+<link href="./dekorasiultah.com_files/nivo.css" rel="stylesheet" type="text/css">
+<script>
+$(window).load(function(){
+	$("#slider").nivoSlider();
+});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$("#ac1").hide();
+		$("#ac2").hide();
+		$("#ac3").hide();
+		$(".a a").click(function(){
+			var n=$(this).attr("href");
+			if(n=="#ac3"){
+				$("#ac2").slideUp();
+				$("#ac1").slideUp();
+				$(n).slideToggle();
+			}
+			if(n=="#ac2"){
+				$("#ac3").slideUp();
+				$("#ac1").slideUp();
+				$(n).slideToggle();
+			}
+			if(n=="#ac1"){
+				$("#ac2").slideUp();
+				$("#ac3").slideUp();
+				$(n).slideToggle();
+			}
+			
+			
+		});
+	});
+</script>
+</head>
+
+<body style="">
+<div class="layout">
+	<div class="header"><img src="./dekorasiultah.com_files/header6.jpg" width="900" height="150"></div>
+    <div class="hmenu">
+    <ul>
+    	<b>
+		<li><a href="http://localhost/pw/index.php">Home</a></li>
+        <li><a href="http://localhost/pw/artikel.php">Artikel</a></li>
+        <li><a href="http://localhost/pw/detail.php">Detail Artikel</a></li>
+        <li><a href="http://localhost/pw/kontak.php">Hubungi Kami</a></li>
+        </b>
+	</ul>
+    </div>
+  <div class="sidebar">
+    	<div class="box">
+			<h3>Kontak</h3>
+			
+		</div>
+        
+        
+        <div class="box">
+        <img src="./dekorasiultah.com_files/jasa.gif" width="280" height="200"></div>
+  </div>
+  <div class="content">
+        	<div class="boxc">
+			<h3>Hubungi Kami</h3>
+			<div class="isi">
+            <div id="login">
+           	  <div id="input1">
+                <form action="http://localhost/pw/kontak.php" method="post">
+                	<div>
+                    <input title="nama" type="text" name="user" placeholder="Nama" class="lg">
+                    </div>
+                    <div style="margin-top:10px;">
+                    <input title="email" type="password" name="pass" placeholder="Email" class="lg">
+                    </div>
+                    <div style="margin-top:10px;">
+                     <textarea name="pesan" rows="4" cols="30" placeholder="Pesan" class="lg"></textarea>
+                    </div>
+                    <div style="margin-top:10px;">
+                    <input title="kirim" type="submit" name="kirim" value="Kirim" class="btn">
+                    </div>
+
+                </form>
+               
+                
+            	</div>
+            </div>
+			</div>
+		</div>
+    </div>
+    
+    
+    <div class="clear"></div>
+    <div class="footer"><p>Copyright © 2017 DekorasiUlangTahun.com
+    
+    </p></div>
+    
+</div>
+
+
+
+</body></html>
